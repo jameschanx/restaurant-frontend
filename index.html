@@ -1,0 +1,43 @@
+<html>
+    <h1>
+        Hello Welcome to Restaurant App
+    </h1>
+    <p>
+        <select id="availableSelections">
+        <!--
+            <option>Table 3</option>
+            <option>Table 4</option>
+            <option>Table 5</option>
+        -->
+        </select>
+        <button onclick="book()">Book</button>
+    </p>
+    <p>
+        <select id="unavailableSelections">
+        <!--
+            <option>Table 1</option>
+            <option>Table 2</option>
+        -->
+        </select>
+        <button onclick="clean()">Clean</button>
+    </p>
+    <p>
+        <div>------------------ Message Log ------------------</div>
+        <div id="messages">
+        <!--
+            <div>Table 1 is book</div>
+            <div>Table 2 is book</div>
+            <div>Table 1 is cleaned</div>
+            <div>Table 3 is book</div>
+            <div>Table 4 is book</div>
+        -->
+        </div>
+    </p>
+    <script src="functions.js"></script>
+</html>
+
+<!--
+    1. load the page will call restaurant api to get table statuses and populate options in the two dropdown menu
+    2. when Book button is pressed, it will call book() function in function.js, which will call restaurant's book api, and update dropdown menu and message log
+    3. when Clean button is pressed, it will call clean() function in function.js, which will call restaurant's clean api, and update dropdown menu and message log
+-->
